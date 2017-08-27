@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/aframe-extras.object-model@%5E3.8.x/dist/aframe-extras.object-model.min.js" data-component-description="Loader for THREE.ObjectLoader-compatible models." data-component-names="object-model" data-component-url="https://npmjs.com/package/aframe-extras.object-model" data-package-name="aframe-extras.object-model"></script>
   </head>
   <body class="a-body">
-    <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+    <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" physics="friction: 0.1; restitution: 0.2">
       <a-entity environment="skyType:atmosphere; seed:3; skyColor:#24B59F; horizonColor:#EFF9B7; preset: forest; ground:noise; groundYScale:4.18; groundTexture:squares; groundColor:#937a24; groundColor2:#987d2e; gridColor:#c5a543; grid:cross" rain=""></a-entity>
       <a-sky radius="200" theta-length="110" geometry="" material="sunPosition:-0.75 0.55 -0.35; shader:skyshader; npot:false; color:#FFFFFF"></a-sky>
       <a-entity position="0 50 0" light="intensity:0.1; groundColor:#937A24; color:#91DACF; type:hemisphere"></a-entity>
