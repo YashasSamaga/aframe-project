@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M59+)" data-expires="2017-07-28" content="ArFv1ZeTwzkhjNE00uAE+XtiQB41fwqG/TqlFMLrepd9sforQSvQE/tgfIbUMYNuNre4QR1k4/z8xp2mV3dbhwwAAABeeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjEiLCJleHBpcnkiOjE1MDEyMTcwMDIsImlzU3ViZG9tYWluIjp0cnVlfQ==" />
+		<meta charset="utf-8"/>
+
+		<title>Yashas' AFRAME Project</title>
+
+		<meta name="description" content="Yashas' AFRAME Project" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.6.1/aframe-master.min.js"></script>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" media="all" />
+
+		<script src="https://unpkg.com/aframe-environment-component@%5E1.0.x/dist/aframe-environment-component.min.js" data-component-description="Infinite environments for your A-Frame VR scene in just one file." data-component-names="environment" data-component-url="https://npmjs.com/package/aframe-environment-component" data-package-name="aframe-environment-component"></script>
+
+		<script src="https://unpkg.com/aframe-physics-system@%5E1.4.x/dist/aframe-physics-system.min.js" data-component-description="Physics system for A-Frame VR, built on Cannon.js" data-component-names="dynamic-body,static-body,constraint" data-component-url="https://npmjs.com/package/aframe-physics-system" data-package-name="aframe-physics-system"></script>
+
+		<script src="https://unpkg.com/aframe-rain@%5E1.0.2/build/aframe-rain.min.js" data-component-description="A-Frame rain component" data-component-names="rain" data-component-url="https://npmjs.com/package/aframe-rain" data-package-name="aframe-rain"></script>
+
+		<script src="https://unpkg.com/aframe-extras.object-model@%5E3.8.x/dist/aframe-extras.object-model.min.js" data-component-description="Loader for THREE.ObjectLoader-compatible models." data-component-names="object-model" data-component-url="https://npmjs.com/package/aframe-extras.object-model" data-package-name="aframe-extras.object-model"></script>
+	</head>
+	<body class="a-body ">
+		<a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" environment="skyType:atmosphere;seed:8;skyColor:#24b59f;horizonColor:#eff9b7;lightPosition:-1.2 0.88 -0.55;fog:0.8;ground:noise;groundYScale:4.18;groundTexture:squares;groundColor:#937a24;groundColor2:#987d2e;dressing:trees;dressingAmount:500;dressingColor:#888b1d;dressingScale:1;dressingVariance:10 10 10;gridColor:#c5a543;preset:forest" rain="">
+			<a-plane position="0 0 -4" rotation="-90.01166961505233 0 0" width="4" height="4" color="#7BC8A4" scale="100 100 100" material="side:back" geometry="" static-body="sphereRadius:NaN;shape:box"></a-plane>
+			<a-sky color="#ECECEC" material="" geometry=""></a-sky>
+			<a-entity position="0 50 0" light="intensity:0.377;groundColor:#937a24;color:#91dacf;type:hemisphere"></a-entity>
+			<a-entity rotation="-90 0 0" scale="1 1 4.18" shadow="cast:false;receive:false"></a-entity>
+			<a-entity></a-entity>
+			<a-sky radius="200" theta-length="110" geometry="" material="sunPosition:-0.7563943317323842 0.5546891766037485 -0.34668073537734284;shader:skyshader;npot:false;color:#fff"></a-sky>
+			<a-entity id="stars"></a-entity>
+			<a-entity position="4 15 0" scale="1 6.7 1" geometry="" quaternion="0 0 0 1.0" velocity="" dynamic-body="sphereRadius:NaN" material="color:#227b60"></a-entity>
+			<a-entity position="2 10 0" scale="1 6.7 1" geometry="" quaternion="0 0 0 1.0" velocity="" dynamic-body="sphereRadius:NaN" material="color:#227885"></a-entity>
+			<a-entity position="0 5 0" scale="1 6.69 1" geometry="" quaternion="0 0 0 1.0" velocity="" dynamic-body="sphereRadius:NaN" material="color:#0b265d"></a-entity>
+			<a-entity position="-2 0.6 0" scale="1 6.7 1" geometry="" quaternion="0 0 0 1" velocity="" dynamic-body="sphereRadius:NaN" material="color:#341359"></a-entity>
+			<a-entity position="-2 3.5 0" scale="2.5 1 1" static-body="sphereRadius:NaN" geometry="" material="color:#341359"></a-entity>
+			<a-entity position="3.636 1.5 -2.5" rotation="-75.74502051629483 -134.8169691942827 133.2126873679164" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="1.824 1.5 -2.5" rotation="-75.74502051629483 -134.8169691942827 133.2126873679164" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="0.114 3.052 -2.5" rotation="-75.74502051629483 -134.8169691942827 133.2126873679164" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="0.114 4.386 -2.5" rotation="-75.74502051629483 -134.8169691942827 133.2126873679164" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="0.114 -0.73 -2.5" rotation="68.86952697472495 -28.017636181897256 -30.538650480472878" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="-0.081 1.5 -2.5" rotation="-75.74502051629483 -134.8169691942827 133.2126873679164" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="-2.5 1.5 -2.5" rotation="-75.51583739824251 -127.65499675514742 132.52513801375943" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="-4.306 1.5 -2.5" rotation="-75.51583739824251 -127.65499675514742 132.52513801375943" light="intensity:0.5;type:spot"></a-entity>
+			<a-entity position="5.69 0 0.131" line="end:0 1000 0;color:#4ecb2b"></a-entity>
+			<a-entity position="-4.736 0 0.131" line="end:0 1000 0;color:#4ecb2b"></a-entity>
+			<a-entity position="8 0 -5.5" line="end:-1000 1000 1000;color:#4ecb2b"></a-entity>
+			<a-entity position="-6.79 0 -5.5" line="end:1000 1000 1000;color:#4ecb2b"></a-entity>
+		</a-scene>
+	</body>
+</html>
